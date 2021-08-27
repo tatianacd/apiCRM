@@ -38,4 +38,9 @@ public class ProductoController {
         return productoService.findProductosByNombreContaining(nombre);
     }
 
+    @GetMapping("productos/categoria/{categoria}")
+    public List<ProductoEntity>findProductosByCategoriaContaining(@PathVariable String categoria){
+        return productoService.findProductosByCategoriaContaining(categoria);
+    }
+
 }

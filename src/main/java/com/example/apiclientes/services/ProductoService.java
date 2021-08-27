@@ -30,4 +30,8 @@ public class ProductoService {
         return productoRepository.findProduductosByNombreContaining(nombre);
     }
 
+    public List<ProductoEntity>findProductosByCategoriaContaining(String categoria){
+        return productoRepository.findProductosByCategoriaContaining(categoria);
+    }
+
 }
